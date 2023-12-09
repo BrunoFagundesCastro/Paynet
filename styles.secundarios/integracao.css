@@ -14,6 +14,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 body{
     background-color: var(--roxo);
     background-image: url("../images/desenhos-fundo.png");
@@ -37,6 +38,43 @@ header{
 
 }
 
+header a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 10px;
+    font-size: 14px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+ }
+
+ .nav-list {
+    margin: 50px;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Alteração para exibir os itens horizontalmente */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+ }
+
+ .nav-list li {
+    margin: 10px;
+    padding: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+ }
+
 header .logo-header{
     margin-left: 2rem;
 }
@@ -59,9 +97,4 @@ header nav .youtube-header{
     width: 100%;
     margin-right: 2rem;
 
-}
-
-main {
-    flex: 1;
-    margin-bottom: 85px; /* Adicione margem inferior para criar espaço entre o main e o footer */
 }
