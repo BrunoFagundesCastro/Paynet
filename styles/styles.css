@@ -93,7 +93,7 @@ main .botaoCentral {
 main .botaoCentral button {
     width: 500px;
     height: 80px;
-    font-size: 24px;
+    font-size: 26px;
     color: var(--branco);
     text-shadow: 1px 1px 2px black ;
     background: var(--verde);
