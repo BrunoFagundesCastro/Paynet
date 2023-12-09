@@ -112,10 +112,17 @@ footer {
     align-items: center;
     padding: 1rem;
     background-color: var(--roxo);
-    box-shadow: 1px 1px 10px;
+    font-size: 10px;
+    color: var(--branco);
+    box-shadow: 1px 1px 10px black;
     
 
 }
+
+footer .endereco a {
+    color: var(--branco);
+}
+
 
 footer nav{
     display: flex;
