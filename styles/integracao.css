@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    --verde: #71BE44;
+    --roxo: #402B67;
+    --branco: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--roxo);
+    background-image: url("../images/desenhos-fundo.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: var(--roxo);
+    border-radius: 0 5rem 5rem 0;
+    box-shadow: 1px 1px 10px var(--verde);
+    margin-bottom: 20px; /*  ajusta o espaço entre header e main */
+
+}
+
+header .logo-header{
+    margin-left: 2rem;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3vh;
+}
+
+header nav .contato-header{
+    margin: 5rem;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+header nav .youtube-header{
+    width: 100%;
+    margin-right: 2rem;
+
+}
+
+main {
+    flex: 1;
+    margin-bottom: 85px; /* Adicione margem inferior para criar espaço entre o main e o footer */
+}
