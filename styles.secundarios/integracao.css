@@ -98,3 +98,73 @@ header nav .youtube-header{
     margin-right: 2rem;
 
 }
+
+main{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+h2{
+    font-weight: normal;
+    width: 35%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+main div.space-images{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main section.verde{
+    width: 100vw;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--roxo);
+    font-size: 10px;
+    color: var(--verde);
+    box-shadow: 1px 1px 10px black;
+}
+
+footer h3 {
+    text-shadow: 1px 1px 1px var(--branco), 0.9 ; 
+}
+
+footer .endereco a {
+    color: var(--branco);
+}
+
+footer nav.baixo {
+    height: 10px;
+}
+
+footer nav .contato-header{
+    margin: 5rem;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer nav .youtube-header{
+    width: 100%;
+    margin-right: 2rem;
+}

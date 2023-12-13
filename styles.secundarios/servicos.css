@@ -98,3 +98,42 @@ header nav .youtube-header{
     margin-right: 2rem;
 
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    margin-top: 2rem;
+    width: 100vw;
+    height: 70vh;
+}
+
+main div.text h2{
+    font-weight: normal;
+    margin-right: 32rem;
+    font-size: 2rem;
+    
+}
+
+main div.text h2.verde{
+    color: var(--verde);
+    font-weight: 600;
+}
+
+main div.background-verde{
+    background-color: var(--verde);
+    width: 40vw;
+    height: 87vh;
+    position: absolute;
+    right: 0rem;
+    top: 13%;
+}
+
+main img{
+    width: 40%;
+    position: absolute;
+    left: 52.1rem;
+    top: 15%;
+}
