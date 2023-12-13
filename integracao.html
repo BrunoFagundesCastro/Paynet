@@ -7,18 +7,22 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles.secundarios/integracao.css">
     <title>Paynet Captura de Transações</title>
 </head>
 
 <body>
+    <span id="botaoMenu" class="material-symbols-outlined" onclick="exibirMenu()"> menu </span>
+    <span id="botaoFechar" class="material-symbols-outlined" onclick="esconderMenu()"> close </span>
+
 
     <header>
         <a href="index.html"><img src="images/logo2Paynet.svg" alt="Logo Paynet" title="Paynet Captura de Transações"
                 class="logo-header"></a>
 
         <nav>
-            <ul class="nav-list">
+            <ul id="menu">
                 <li><a href="sobrenos.html">Sobre nós</a></li>
                 <li><a href="whitelabel.html">White Label</a></li>
                 <li><a href="integracao.html">Integração</a></li>
@@ -68,6 +72,39 @@
         </div>
     </footer>
 
+    <script>
+        // Função para ocultar botaoMenu e exibir o botaoFechar e o menu
+        function exibirMenu() {
+            botaoMenu.style.display = "none";
+            botaoFechar.style.display = "block";
+            menu.style.display = "flex";
+        }
+
+        // Função para mostrar botaoMenu e ocultar o botaoFechar e o menu
+        function esconderMenu() {
+            botaoMenu.style.display = "block";
+            botaoFechar.style.display = "none";
+            menu.style.display = "none";
+        }
+
+
+
+        // Função que vai verificar se hove redimensionamento da tela
+        function verificarLarguraTela() {
+            var larguraTela = window.innerWidth;
+
+            if (larguraTela < 1120) {
+                botaoMenu.style.display = "block";
+                botaoFechar.style.display = "none";
+                menu.style.display = "none";
+            } else {
+                botaoMenu.style.display = "none";
+                botaoFechar.style.display = "none";
+                menu.style.display = "flex";
+            }
+        }
+        window.addEventListener("resize", verificarLarguraTela);
+    </script>
 </body>
 
 </html>

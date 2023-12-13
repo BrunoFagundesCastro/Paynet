@@ -59,7 +59,7 @@ nav {
     text-align: center;
  }
 
- .nav-list {
+ #menu {
     margin: 50px;
     padding: 5px;
     list-style: none;
@@ -68,7 +68,7 @@ nav {
     align-items: center; /* Alinha os itens no centro verticalmente */
  }
 
- .nav-list li {
+ #menu li {
     margin: 10px;
     padding: 15px;
     letter-spacing: 3px;
@@ -98,6 +98,18 @@ header nav .youtube-header{
     margin-right: 2rem;
 
 }
+
+#botaoMenu, #botaoFechar{
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    color: var(--branco);
+    display: none;
+}
+
+
 
 main{
     color: var(--branco);
@@ -155,7 +167,7 @@ footer .endereco a {
 }
 
 footer nav.baixo {
-    height: 10px;
+    height: 1rem;
 }
 
 footer nav .contato-header{
@@ -167,4 +179,49 @@ footer nav .contato-header{
 footer nav .youtube-header{
     width: 100%;
     margin-right: 2rem;
+}
+
+@media(max-width:600px){
+    #botaoMenu, #botaoFechar{
+        display: block;
+    }
+    
+    #botaoFechar{
+        display: none;
+    }
+
+    header{
+        width: 95vw;
+    }
+    
+    #menu{
+        display: none;
+        position: absolute;
+        margin: 2rem 0;
+        top: 4rem;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--roxo);
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    #menu li{
+        margin: 0;
+        padding: 2rem;
+    }
+
+    main div.space-images{
+        width: 90vw;
+    }
+
+    footer{
+        height: 18vh;
+        align-items: end;
+    }
+
+    footer nav.baixo{
+        margin: 0 4rem 4rem 0;
+    }
 }

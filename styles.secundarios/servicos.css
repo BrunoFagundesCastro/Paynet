@@ -59,7 +59,7 @@ nav {
     text-align: center;
  }
 
- .nav-list {
+ #menu {
     margin: 50px;
     padding: 5px;
     list-style: none;
@@ -68,7 +68,7 @@ nav {
     align-items: center; /* Alinha os itens no centro verticalmente */
  }
 
- .nav-list li {
+ #menu li {
     margin: 10px;
     padding: 15px;
     letter-spacing: 3px;
@@ -99,6 +99,16 @@ header nav .youtube-header{
 
 }
 
+#botaoMenu, #botaoFechar{
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    color: var(--branco);
+    display: none;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -125,7 +135,7 @@ main div.text h2.verde{
 main div.background-verde{
     background-color: var(--verde);
     width: 40vw;
-    height: 87vh;
+    height: 80vh;
     position: absolute;
     right: 0rem;
     top: 13%;
@@ -136,4 +146,103 @@ main img{
     position: absolute;
     left: 52.1rem;
     top: 15%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--roxo);
+    font-size: 10px;
+    color: var(--verde);
+    box-shadow: 1px 1px 10px black;
+    z-index: 1;
+}
+
+footer h3 {
+    text-shadow: 1px 1px 1px var(--branco), 0.9 ; 
+}
+
+footer .endereco a {
+    color: var(--branco);
+}
+
+footer nav.baixo {
+    height: 1rem;
+}
+
+footer nav .contato-header{
+    margin: 5rem;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer nav .youtube-header{
+    width: 100%;
+    margin-right: 2rem;
+}
+
+
+@media(max-width:600px){
+
+    main div.text{
+        margin-bottom: 2rem;
+    }
+
+    #botaoMenu, #botaoFechar{
+        display: block;
+    }
+    
+    #botaoFechar{
+        display: none;
+    }
+
+    header{
+        width: 95vw;
+    }
+    
+    #menu{
+        display: none;
+        position: absolute;
+        margin: 2rem 0;
+        top: 4rem;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--roxo);
+        z-index: 2;
+        flex-direction: column;
+    }
+
+    #menu li{
+        margin: 0;
+        padding: 2rem;
+    }
+
+    main div.background-verde{
+        position: static;
+        width: 100vw;
+
+    }
+
+    main div.text h2{
+        margin: 0;
+    }
+
+    main img{
+        width: 80%;
+        z-index: 1;
+        left: 4rem;
+        top: 18.5rem;
+    }
+
+    footer{
+        height: 18vh;
+        align-items: end;
+    }
+
+    footer nav.baixo{
+        margin: 0 4rem 4rem 0;
+    }
 }
