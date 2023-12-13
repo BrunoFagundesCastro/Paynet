@@ -107,7 +107,7 @@ main {
 main .textoInicial {
     padding: 70px;
     padding-top: 30px;
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 40px;
     position: relative;
     z-index: 2;
@@ -145,8 +145,8 @@ main .botaoCentral button a {
 }
 
 main .caixavideo {
-    width: 500px;
-    height: 300px;
+    width: 496px;
+    height: 282px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,15 +155,23 @@ main .caixavideo {
     margin-left: 700px;
     position: relative;
     top: -100px;
+    padding: 1px;
+    padding-left: 1px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    box-shadow: 1px 1px 7px var(--verde);
+    border-radius: 25px;
+
 }
 
 main .video-container {
-    padding: 10px; /* Adicionado para criar espaço interno ao redor do vídeo */
-    box-sizing: border-box; /* Garante que o padding seja incluído nas dimensões da caixa */
+    margin-top: 3px;
+    
 }
 
 main .video {
-    
+    border-radius: 20px;
 }
 
 
