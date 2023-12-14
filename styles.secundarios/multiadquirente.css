@@ -59,7 +59,7 @@ nav {
     text-align: center;
  }
 
- .nav-list {
+ #menu {
     margin: 50px;
     padding: 5px;
     list-style: none;
@@ -68,7 +68,7 @@ nav {
     align-items: center; /* Alinha os itens no centro verticalmente */
  }
 
- .nav-list li {
+ #menu li {
     margin: 10px;
     padding: 15px;
     letter-spacing: 3px;
@@ -96,5 +96,178 @@ header nav .contato-header{
 header nav .youtube-header{
     width: 100%;
     margin-right: 2rem;
+}
 
+#botaoMenu, #botaoFechar{
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    color: var(--branco);
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.verde{
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+main div.verde img{
+    width: 50%;
+    margin-right: 4rem;
+}
+
+main div.verde div.text{
+    width: 30%;
+    color: var(--branco);
+    padding: 0.5rem;
+    text-align: right;
+}
+
+main div.verde div.text h2{
+    background-color: var(--roxo);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+main div.verde div.text p{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0.2rem 0;
+}
+
+main div.verde div.text h3{
+    color: var(--roxo);
+}
+
+main div.verde div.text div.transacoes-on-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+main div.verde div.text div.transacoes-on-us p{
+    margin-right: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--roxo);
+    font-size: 10px;
+    color: var(--verde);
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h3 {
+    text-shadow: 1px 1px 1px var(--branco), 0.9 ; 
+}
+
+footer .endereco a {
+    color: var(--branco);
+}
+
+footer nav.baixo {
+    height: 1rem;
+}
+
+footer nav .contato-header{
+    margin: 5rem;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer nav .youtube-header{
+    width: 100%;
+    margin-right: 2rem;
+}
+
+@media(max-width:600px){
+    #botaoMenu, #botaoFechar{
+        display: block;
+    }
+    
+    #botaoFechar{
+        display: none;
+    }
+
+    header{
+        width: 95vw;
+    }
+    
+    #menu{
+        display: none;
+        position: absolute;
+        margin: 2rem 0;
+        top: 4rem;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--roxo);
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    #menu li{
+        margin: 0;
+        padding: 2rem;
+    }
+
+    footer{
+        height: 14vh;
+        align-items: end;
+    }
+
+    footer nav.baixo{
+        margin: 0 4rem 4rem 0;
+    }
+}
+
+@media(max-width:450px){
+    .logo-header{
+        width: 90%;
+    }
+
+    main div.verde{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    main div.verde img{
+        width: 80%;
+        margin: 4rem 0;
+    }
+
+    main div.verde div.text{
+        width: 100%;
+        text-align: center;
+    }
+
+    main div.verde div.text div.transacoes-on-us{
+        display: flex;
+        flex-direction: column;
+    }
 }

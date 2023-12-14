@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favico.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Paynet Captura de Transações</title>
     <link rel="stylesheet" href="styles.secundarios/multiadquirente.css">
 
 </head>
+
 <body>
+    <span id="botaoMenu" class="material-symbols-outlined" onclick="exibirMenu()"> menu </span>
+    <span id="botaoFechar" class="material-symbols-outlined" onclick="esconderMenu()"> close </span>
+
     <header>
-        <a href="index.html"><img src="images/logo2Paynet.svg" alt="Logo Paynet" title="Paynet Captura de Transações" class="logo-header"></a>
+        <a href="index.html"><img src="images/logo2Paynet.svg" alt="Logo Paynet" title="Paynet Captura de Transações"
+                class="logo-header"></a>
 
         <nav>
-            <ul class="nav-list">
+            <ul id="menu">
                 <li><a href="sobrenos.html">Sobre nós</a></li>
                 <li><a href="whitelabel.html">White Label</a></li>
                 <li><a href="integracao.html">Integração</a></li>
@@ -23,5 +31,72 @@
         </nav>
 
     </header>
+
+    <main>
+        <div class="verde">
+            <img src="images/multiadquirente.png" alt="Multi-Adquirente" title="Multi-Adquirente">
+            <div class="text">
+                <h2>Simples e Rápido</h2>
+                <h3>INTEGRAMOS SUA OPERAÇÃO</h3>
+                <p>com qualquer adquirente,</p>
+                <p>emissor ou bandeira</p>
+                <p>com possibilidade de</p>
+                <div class="transacoes-on-us">
+                    <p>transações</p>
+                    <h3><i>On Us</i></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>PAYNET CAPTURA DE TRANSACOES E SISTEMAS LTDA</h3>
+
+        <nav class="baixo">
+            <a href="#" class="contato-header">Contato</a>
+            <a href="https://www.youtube.com/watch?v=aus3K3AcgcA" target="_blank" class="youtube-header"><img src="images/botao-play.png" alt="Acesse o YouTube da Paynet" title="Acesse o YouTube da Paynet"></a>
+            <a href="https://www.linkedin.com/company/paynet-captura-de-transa%C3%A7%C3%B5es-e-sistemas-ltda/" target="_blank"><img src="images/in.png" alt="Acesse o nosso LinkedIn" title="Acesse o nosso LinkedIn"></a>
+        </nav>
+
+        <div class="endereco">
+            <a href="https://www.google.com.br/maps/place/Paynet+Captura+de+Transa%C3%A7%C3%B5es/@-23.5013991,-46.8433804,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf03728c4961f5:0xdc74c7be834fdab6!8m2!3d-23.5013991!4d-46.8408001!16s%2Fg%2F11ptsgln3c?entry=ttu" target="_blank">Alameda Araguaia 2190, 8º andar - 810, Alphaville - Barueri, SP</a>
+        </div>
+    </footer>
+
+
+    <script>
+        // Função para ocultar botaoMenu e exibir o botaoFechar e o menu
+        function exibirMenu() {
+            botaoMenu.style.display = "none";
+            botaoFechar.style.display = "block";
+            menu.style.display = "flex";
+        }
+
+        // Função para mostrar botaoMenu e ocultar o botaoFechar e o menu
+        function esconderMenu() {
+            botaoMenu.style.display = "block";
+            botaoFechar.style.display = "none";
+            menu.style.display = "none";
+        }
+
+
+
+        // Função que vai verificar se hove redimensionamento da tela
+        function verificarLarguraTela() {
+            var larguraTela = window.innerWidth;
+
+            if (larguraTela < 1120) {
+                botaoMenu.style.display = "block";
+                botaoFechar.style.display = "none";
+                menu.style.display = "none";
+            } else {
+                botaoMenu.style.display = "none";
+                botaoFechar.style.display = "none";
+                menu.style.display = "flex";
+            }
+        }
+        window.addEventListener("resize", verificarLarguraTela);
+    </script>
 </body>
+
 </html>
