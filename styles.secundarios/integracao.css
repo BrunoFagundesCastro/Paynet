@@ -217,11 +217,31 @@ footer nav .youtube-header{
     }
 
     footer{
-        height: 18vh;
+        height: 14vh;
         align-items: end;
     }
 
     footer nav.baixo{
         margin: 0 4rem 4rem 0;
     }
+}
+
+@media(max-width:450px){
+    .logo-header{
+        width: 90%;
+    }
+
+    main div.space-images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    main div.space-images img{
+        margin: 2rem;
+    }
+    
 }

@@ -144,7 +144,7 @@ main div.background-verde{
 main img{
     width: 40%;
     position: absolute;
-    left: 52.1rem;
+    left: 51.1rem;
     top: 15%;
 }
 
@@ -244,5 +244,20 @@ footer nav .youtube-header{
 
     footer nav.baixo{
         margin: 0 4rem 4rem 0;
+    }
+}
+
+@media(max-width:450px){
+    .logo-header{
+        width: 90%;
+    }
+
+    main div.background-verde{
+        margin-top: 4rem;
+        height: 50vh;
+    }
+
+    main img{
+        top: 25rem;
     }
 }
