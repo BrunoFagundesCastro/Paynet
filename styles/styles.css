@@ -106,8 +106,8 @@ main {
 
 main .textoInicial {
     padding: 70px;
-    padding-top: 60px;
-    margin-top: 90px;
+    padding-top: 30px;
+    margin-top: 85px;
     margin-left: 40px;
     position: relative;
     z-index: 2;
@@ -121,8 +121,8 @@ main .destaque {
 }
 
 main .botaoCentral {
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 15px;
     margin-left: 50px;
     position: relative;
     z-index: 1;
@@ -143,6 +143,39 @@ main .botaoCentral button a {
     color: var(--branco);
     text-decoration: none;
 }
+
+main .caixavideo {
+    width: 496px;
+    height: 282px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--verde);
+    margin-top: -235px;
+    margin-left: 700px;
+    position: relative;
+    top: -100px;
+    padding: 1px;
+    padding-left: 1px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    box-shadow: 1px 1px 7px var(--verde);
+    border-radius: 25px;
+
+}
+
+main .video-container {
+    margin-top: 3px;
+    
+}
+
+main .video {
+    border-radius: 20px;
+}
+
+
+
 
 footer {
     display: flex;
